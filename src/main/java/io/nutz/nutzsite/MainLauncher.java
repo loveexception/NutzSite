@@ -97,17 +97,20 @@ public class MainLauncher {
 //    @Ok("th:/main_v1.html")
     @Ok("th:/main.html")
     public NutMap main() {
+
         return NutMap.NEW().setv("version", Globals.getConfig("version"));
     }
 	@At({"/sys/OBJ1"})
 	@Ok("th:/sys/obj/obj1.html")
 	public NutMap obj1() {
-	    return NutMap.NEW().setv("version", Globals.getConfig("version"));
+
+        return NutMap.NEW().setv("version", Globals.getConfig("version"));
 	}
 	@At({"/sys/OBJ2"})
 	@Ok("th:/sys/obj/obj2.html")
 	public NutMap obj2() {
-	    return NutMap.NEW().setv("version", Globals.getConfig("version"));
+
+        return NutMap.NEW().setv("version", Globals.getConfig("version"));
 	}
     /**
      * NB自身初始化完成后会调用这个方法
